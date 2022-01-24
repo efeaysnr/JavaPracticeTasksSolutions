@@ -18,6 +18,12 @@ public class Device {
 
         if(brand == null){
             System.err.println("Invalid brand");
+            System.exit(1);
+        }
+        
+        if(brand.isEmpty() || brand.isBlank()){
+            System.err.println("Invalid brand");
+            System.exit(1);
         }
 
         this.brand = brand;
@@ -28,6 +34,17 @@ public class Device {
     }
 
     public void setModel(String model) {
+
+        if(model == null){
+            System.err.println("Invalid model");
+            System.exit(1);
+        }
+
+        if(model.isEmpty() || model.isBlank()){
+            System.err.println("Invalid model");
+            System.exit(1);
+        }
+        
         this.model = model;
     }
 
@@ -36,6 +53,10 @@ public class Device {
     }
 
     public void setPrice(double price) {
+        if(price <= 0){
+            System.err.println("Invalid price");
+            System.exit(1);
+        }
         this.price = price;
     }
 
@@ -54,6 +75,15 @@ public class Device {
     public void setSize(String size) {
         this.size = size;
     }
+
+    public void turnOn(){
+        System.out.println("Turning on "+brand+" "+model);
+    }
+
+    public void turnOff(){
+        System.out.println("Turning off "+brand+" "+model);
+    }
+
 
     public String toString() {
         return "Device{" +

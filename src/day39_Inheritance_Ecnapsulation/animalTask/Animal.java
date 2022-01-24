@@ -27,7 +27,7 @@ public class Animal {
             System.exit(1);
         }
 
-        if(name.isEmpty()){
+        if(name.isEmpty() || name.isBlank()){
             System.err.println("Invalid name");
             System.exit(1);
         }
@@ -46,7 +46,7 @@ public class Animal {
             System.exit(1);
         }
 
-        if(breed.isEmpty()){
+        if(breed.isEmpty() || breed.isBlank()){
             System.err.println("Invalid breed");
             System.exit(1);
         }
@@ -93,7 +93,7 @@ public class Animal {
             System.exit(1);
         }
 
-        if(color.isEmpty()){
+        if(color.isEmpty() || color.isBlank()){
             System.err.println("Invalid color");
             System.exit(1);
         }
