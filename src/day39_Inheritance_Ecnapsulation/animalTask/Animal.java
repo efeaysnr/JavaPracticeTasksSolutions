@@ -23,12 +23,12 @@ public class Animal {
     public void setName(String name) {
 
         if(name == null){
-            System.out.println("Invalid name");
+            System.err.println("Invalid name");
             System.exit(1);
         }
 
         if(name.isEmpty()){
-            System.out.println("Invalid name");
+            System.err.println("Invalid name");
             System.exit(1);
         }
 
@@ -42,12 +42,12 @@ public class Animal {
 
     public void setBreed(String breed) {
         if(breed == null){
-            System.out.println("Invalid breed");
+            System.err.println("Invalid breed");
             System.exit(1);
         }
 
         if(breed.isEmpty()){
-            System.out.println("Invalid breed");
+            System.err.println("Invalid breed");
             System.exit(1);
         }
 
@@ -69,7 +69,7 @@ public class Animal {
     public void setGender(char gender) {
         gender = (""+gender).toUpperCase().charAt(0);
         if(!(gender == 'M' || gender == 'F')){
-            System.out.println("Invalid gender");
+            System.err.println("Invalid gender");
             System.exit(1);
         }
         this.gender = gender;
@@ -89,12 +89,12 @@ public class Animal {
 
     public void setColor(String color) {
         if(color == null){
-            System.out.println("Invalid color");
+            System.err.println("Invalid color");
             System.exit(1);
         }
 
         if(color.isEmpty()){
-            System.out.println("Invalid color");
+            System.err.println("Invalid color");
             System.exit(1);
         }
 

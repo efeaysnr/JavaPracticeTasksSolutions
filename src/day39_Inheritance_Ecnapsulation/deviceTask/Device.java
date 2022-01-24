@@ -15,6 +15,11 @@ public class Device {
     }
 
     public void setBrand(String brand) {
+
+        if(brand == null){
+            System.err.println("Invalid brand");
+        }
+
         this.brand = brand;
     }
 
