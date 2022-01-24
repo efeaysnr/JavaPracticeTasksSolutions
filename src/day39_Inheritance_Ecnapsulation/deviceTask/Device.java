@@ -5,10 +5,16 @@ public class Device {
     private String brand, model, color, size;
     private double price;
 
-
-
     public static boolean hasBattery = true,
                             hasPowerButton = true;
+
+    public Device(String brand, String model, String color, String size, double price) {
+        setBrand(brand);
+        setModel(model);
+        setColor(color);
+        setSize(size);
+        setPrice(price);
+    }
 
     public String getBrand() {
         return brand;
